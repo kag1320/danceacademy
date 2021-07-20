@@ -1,0 +1,32 @@
+extends base.pug
+
+//- replace below line with block scripts in base.pug and same for all other block
+block scripts
+    script(src='../static/index.js')
+
+block style
+    style
+        include ../static/style.css
+
+block content
+    section#introSection
+        div Welcome to Chibbi Dance Academy
+        div.small “Life is the dancer and you are the dance.” 
+
+    section#missionSection
+        h2 Our Mission
+        div.card
+            h3 Dance Perfection
+            div.card-box
+                div.card-img
+                    img(src="/static/logo2.jpg")
+        div.card
+            h3 Dance the way you like
+            div.card-box
+                div.card-img
+                    img(src="/static/logo3.jpg")
+        div.card
+            h3 Expert teaching
+            div.card-box
+                div.card-img
+                    img(src="/static/logo4.png")

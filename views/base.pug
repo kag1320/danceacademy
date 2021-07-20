@@ -1,0 +1,26 @@
+//- Pug supports template inheritance.Template inheritance works via the block and extends keywords.
+//- In a template,a block simply is that a child template may replace.This process is reccursive.
+//- https://pugjs.org/language/inheritance.html
+
+doctype html
+html
+    head
+        title Chibbi Dance Academy
+        block scripts
+        block style
+    body 
+        nav#navbar.top
+            ul
+                div#logo
+                    img(id="logoimage" src="/static/logo1.png")
+                //- if we want to use neseted tags that is a inside li and also give href 
+                li #[a(href="/") Home] 
+                //- "/" this is used to direct on the same page that we are on
+                li #[a(href="/") About]
+                li #[a(href="/") Services]
+                li #[a(href="/") Class Info]
+                li #[a(href="/contact") Contact Us]
+
+        block content
+        footer#footer   
+            | Copyright © 2021 chibbiDanceAcademy.com | All rights reserved

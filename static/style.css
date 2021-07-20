@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&family=ZCOOL+QingKe+HuangYou&display=swap');
+/* either we import font-family in css sheet or include in our html or pug  */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'ZCOOL QingKe HuangYou';
+}
+
+#navbar{
+    background-color: #dd3e3e;
+    padding: 13px 14px;
+}
+
+#navbar ul div#logo img{
+    width: 45px;
+    height: 45px;
+}
+
+#navbar ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#navbar li a{
+    text-decoration: none;
+    padding: 13px 30px;
+    margin: 10px;
+    color: white;
+    font-family: 'Yeon Sung', cursive;
+    font-size: 1.2rem;
+}
+
+#navbar li a:hover{
+    color: black;
+}
+
+#logoimage:hover{
+    filter: invert(1);
+}
+
+#introSection{
+    height: 400px;   
+    /* here coevr is used to cover whole section,if we use contain
+    the whole image will be contained in the section a/c to height and width ratio  */
+    background:center / cover no-repeat url("/static/bg.jpg");
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    font-size: 2.3rem;
+    padding-bottom: 45px;
+}
+
+#introSection div.small{
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+#missionSection{
+    height: 315px;
+    margin: auto;
+    width: 75%;
+    display: block;
+}
+
+#missionSection h2{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 10px;
+    font-family: 'Yeon Sung', cursive;
+}
+
+#missionSection div.card{
+    border: 2px solid black;
+    border-radius: 9px;
+    width: 29%;
+    height: 200px;
+    margin: 24px 24px;
+    display: inline-block;
+}
+
+#missionSection div.card h3{
+    text-align: center;
+    margin: 12px;
+}
+
+.card-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-img img{
+    width: 150px;
+    height: 150px;
+}
+
+/* #sponsorSection{
+    height: 300px;   
+    background-color: #8f0a0d;
+}
+#sponsorSection h2{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Yeon Sung', cursive;
+} */
+
+#footer{
+    height: 40px;    
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: none;
+}
